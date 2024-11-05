@@ -1,0 +1,41 @@
+.fleet{
+  justify-content: flex-end !important;
+  margin-top: 5%;
+}
+
+#fleet1{
+    margin-top: -25%;
+    flex: end;
+}
+#fleet1 img{
+    margin-left: 220%;
+ 
+}
+#halo{
+    margin-left: 20%;
+}
+#halo img{
+    width: 10%;
+    display: inline-block;
+    background-color: #f75308;
+    border-radius: 50%;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+.fleet h2 {
+      font-family: "Lato", sans-serif; 
+      font-weight: 800;
+      font-style: bold;
+}
+.fleet p{
+      font-family: "Lato", sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      margin-left: 12%;
+}
+@media only screen and (max-width: 768px){
+  .fleet{
+    display: none;
+  }
+}
+

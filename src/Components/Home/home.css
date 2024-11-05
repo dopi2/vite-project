@@ -1,0 +1,79 @@
+#parent{
+    position: relative;
+    margin-left:10%;
+}
+#Fitting{
+    margin-top: 1%;
+}
+.Firstimg{
+    width:450px;
+    height:450px;
+}
+
+.Secondimg{
+    width:700px;
+    height:400px;
+    position:absolute;
+    top:50px;
+    left:-100px;
+}
+.container{
+    animation: fade-up 0.5s;
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes fade-down{
+    0% {
+        opacity: 1;
+        transform: translateY(-30px) scale(0.9);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@media screen and (max-width:900px) and (min-width:481px){
+    .container {
+        display: flex;
+        flex-direction: column-reverse;   
+        overflow-x: hidden;
+        
+       }
+}
+
+@media only screen and (max-width: 768px){
+    .container {
+     display: flex;
+     flex-direction: column-reverse;   
+     overflow-x: hidden;
+
+    }
+
+    #Fitting{
+        direction: ltr;
+    }
+    .Firstimg{
+        width:250px;
+        margin-left: 10%;
+        height:250px;
+    }
+    
+    .Secondimg{
+        width:300px;
+        height:100px;
+        position:absolute;
+        top:50px;
+        left:2px;
+    }
+}

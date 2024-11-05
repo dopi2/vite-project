@@ -1,0 +1,45 @@
+.nip{
+    width: 50%;
+    height: fit-content;
+}
+.hitt{
+    margin-top: -10%;
+}
+.hitt h2{
+color: #f75308 !important;
+font-family: "Lato", sans-serif; 
+font-weight: 800;
+font-style: bold;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+       clip-path: inset(100% 100% 0 0);
+    }
+    to{
+        opacity: 1;
+       clip-path: inset(0 0 0 0);
+    }
+}
+
+.hitt {
+    animation: appear 2s linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.hitt p{
+    color: #000 !important;
+    font-family: "Lato", sans-serif; 
+    font-weight: 500;
+}
+
+.hitt1 {
+   background-color:#f75308 !important;
+}
+
+.hitt2 {
+    color: #f75308;
+    background-color: transparent !important;
+}
